@@ -14,23 +14,6 @@ string MakeSAT(int n) {
 		ans += "X";
 		return ans;
 	}
-	if (n == 2) {
-		if (engine() % 3) {
-			ans += "￢";
-		}
-		ans += "X";
-		if (engine() % 2) {
-			ans += "∨";
-		}
-		else {
-			ans += "∧";
-		}
-		if (engine() % 3) {
-			ans += "￢";
-		}
-		ans += "X";
-		return ans;
-	}
 	int rand = (engine() % (1 << (n - 1)) + 1) % (1 << (n - 1));
 	string andor;
 	if (engine() % 5)andor = "∧";
@@ -64,6 +47,6 @@ string MakeSAT(int n) {
 int main() {
 	int n;
 	cin >> n;
-	rep(i, 10) cout << MakeSAT(n) << endl;
+	cout << MakeSAT(n) << endl;
 	return 0;
 }
