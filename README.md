@@ -4,7 +4,7 @@
 
 論理式は、bool型の変数Xと、論理記号∧、∨、￢と()で構成されます。
 ## How to use?
-For-mula-Generator.exeを実行してください。
+Formula-Generator.exeを実行してください。
 
 長さnを入力すると、n文字の変数を使った論理式を返します。
 ### Input 1
